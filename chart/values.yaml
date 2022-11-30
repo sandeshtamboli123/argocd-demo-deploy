@@ -10,7 +10,7 @@ image:
   repository: jenkins
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "${GIT_COMMIT}"
+  tag: "8"
 
 imagePullSecrets: []
 nameOverride: ""
