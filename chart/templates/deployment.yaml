@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.label }}
+  labels:
+    app: {{ .Values.label }}
+spec:
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: {{ .Values.label }}
+      
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.label }}
+        tier: {{ .Values.label }}
+    spec:
+      containers:
+        - name: hello
+          image: {{ .Values.image.name }}:{{ .Values.image.tag }}
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 5000
+            name: hello
