@@ -3,10 +3,9 @@
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
-label: hello
-port: 5000
+label: demo
+port: 80
 image:
-  name: mynamesandesh/jenkins
   repository: mynamesandesh/jenkins
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
@@ -17,7 +16,7 @@ fullnameOverride: ""
 podAnnotations: {}
 service:
   type: NodePort
-  port: 5000
+  port: 80
   targetPort: 8080
 ingress:
   enabled: false

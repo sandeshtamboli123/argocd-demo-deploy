@@ -18,9 +18,8 @@ spec:
         tier: {{ .Values.label }}
     spec:
       containers:
-        - name: hello
-          image: {{ .Values.image.name }}:{{ .Values.image.tag }}
+        - name: my-app
+          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
           imagePullPolicy: Always
           ports:
-          - containerPort: 5000
-            name: hello
+          - containerPort: 8080S
