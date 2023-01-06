@@ -22,4 +22,4 @@ spec:
           image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
           imagePullPolicy: Always
           ports:
-          - containerPort: 8080S
+          - containerPort: 8080
