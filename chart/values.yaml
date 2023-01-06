@@ -18,6 +18,7 @@ podAnnotations: {}
 service:
   type: NodePort
   port: 5000
+  targetPort: 8080
 ingress:
   enabled: false
   annotations: {}
