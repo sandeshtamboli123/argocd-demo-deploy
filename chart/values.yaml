@@ -9,7 +9,7 @@ image:
   repository: mynamesandesh/jenkins
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "bb4b9633b9c3c70274ce54a0935db7d10f047f40"
+  tag: "36441e69eda7524074df69a7fcc7312aa3fd4e3b"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
